@@ -1,7 +1,7 @@
 ## Crypto Currency
 
 
-API-URL: https://cryptocurrency-eight-phi.vercel.app/api/v1/cryptocurrency/stats?coin=bitcoin
+API-URL: https://cryptocurrency-pied.vercel.app/api/v1/cryptocurrency/stats?coin=bitcoin
 Method: GET
 ```sh
 Query params
@@ -22,7 +22,7 @@ Query params
 }
 ```
 Response
-![devia2](https://github.com/user-attachments/assets/9098668c-81ae-4d83-9f40-b825fa3ecf6f)
+https://cryptocurrency-pied.vercel.app/api/v1/cryptocurrency/deviation?coin=bitcoin
 
 ## Getting Started:-
 
