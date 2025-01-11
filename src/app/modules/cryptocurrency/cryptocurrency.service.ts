@@ -32,7 +32,7 @@ const getDeviation = async (payload: ICryptoCurrency) => {
   };
 };
 
-export const StatsService = {
+export const CryptocurrencyService = {
   getStats,
   getDeviation,
 };

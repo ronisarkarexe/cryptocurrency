@@ -1,9 +1,9 @@
 import express from "express";
-import { StatsController } from "./cryptocurrency.controller";
+import { CryptocurrencyController } from "./cryptocurrency.controller";
 
 const router = express.Router();
 
-router.post("/stats", StatsController.getStats);
-router.post("/deviation", StatsController.getDeviation);
+router.post("/stats", CryptocurrencyController.getStats);
+router.post("/deviation", CryptocurrencyController.getDeviation);
 
 export const StatsRouter = router;

@@ -1,9 +1,9 @@
 import { Request, Response } from "express";
-import { StatsService } from "./cryptocurrency.service";
+import { CryptocurrencyService } from "./cryptocurrency.service";
 
 const getStats = async (req: Request, res: Response) => {
   try {
-    const result = await StatsService.getStats(req.body);
+    const result = await CryptocurrencyService.getStats(req.body);
     res.status(200).json({
       message: "Coin get successfully!",
       success: true,
@@ -19,7 +19,7 @@ const getStats = async (req: Request, res: Response) => {
 
 const getDeviation = async (req: Request, res: Response) => {
   try {
-    const result = await StatsService.getDeviation(req.body);
+    const result = await CryptocurrencyService.getDeviation(req.body);
     res.status(200).json({
       message: "Deviation get successfully!",
       success: true,
@@ -33,7 +33,7 @@ const getDeviation = async (req: Request, res: Response) => {
   }
 };
 
-export const StatsController = {
+export const CryptocurrencyController = {
   getStats,
-  getDeviation
+  getDeviation,
 };
