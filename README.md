@@ -2,6 +2,7 @@
 
 
 API-URL: https://cryptocurrency-pied.vercel.app/api/v1/cryptocurrency/stats?coin=bitcoin
+
 Method: GET
 ```sh
 Query params
@@ -14,6 +15,7 @@ Response
 
 
 API-URL: https://cryptocurrency-eight-phi.vercel.app/api/v1/cryptocurrency/deviation?coin=bitcoin
+
 Method: GET
 ```sh 
 Query params
