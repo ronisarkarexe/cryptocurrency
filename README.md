@@ -10,7 +10,8 @@ Query params
 }
 ```
 Response
-![starts](https://github.com/user-attachments/assets/efb365ee-9ae9-4959-b3fc-079f62ecf463)
+![stats2](https://github.com/user-attachments/assets/38076198-a3db-45cf-8595-f11cd7e64d76)
+
 
 API-URL: https://cryptocurrency-eight-phi.vercel.app/api/v1/cryptocurrency/deviation?coin=bitcoin
 Method: GET
@@ -21,8 +22,7 @@ Query params
 }
 ```
 Response
-![deviation](https://github.com/user-attachments/assets/3015b919-1379-4e92-8859-0c296baabac9)
-
+![devia2](https://github.com/user-attachments/assets/9098668c-81ae-4d83-9f40-b825fa3ecf6f)
 
 ## Getting Started:-
 
