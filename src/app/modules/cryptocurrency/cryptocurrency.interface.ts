@@ -1,3 +1,3 @@
-export interface IStats {
+export interface ICryptoCurrency {
   coin: string;
 }
