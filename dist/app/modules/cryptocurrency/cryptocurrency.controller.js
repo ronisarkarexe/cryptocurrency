@@ -13,7 +13,8 @@ exports.CryptocurrencyController = void 0;
 const cryptocurrency_service_1 = require("./cryptocurrency.service");
 const getStats = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const result = yield cryptocurrency_service_1.CryptocurrencyService.getStats(req.body);
+        const { coin } = req.query;
+        const result = yield cryptocurrency_service_1.CryptocurrencyService.getStats(coin);
         res.status(200).json({
             message: "Coin get successfully!",
             success: true,
@@ -29,7 +30,8 @@ const getStats = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
 });
 const getDeviation = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const result = yield cryptocurrency_service_1.CryptocurrencyService.getDeviation(req.body);
+        const { coin } = req.query;
+        const result = yield cryptocurrency_service_1.CryptocurrencyService.getDeviation(coin);
         res.status(200).json({
             message: "Deviation get successfully!",
             success: true,

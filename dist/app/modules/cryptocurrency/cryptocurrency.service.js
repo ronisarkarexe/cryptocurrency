@@ -13,11 +13,11 @@ exports.CryptocurrencyService = void 0;
 const crypto_model_1 = require("../crypto/crypto.model");
 const cryptocurrency_utils_1 = require("./cryptocurrency.utils");
 const getStats = (payload) => __awaiter(void 0, void 0, void 0, function* () {
-    const result = yield crypto_model_1.Crypto.findOne({ coin: payload.coin }).sort({
+    const result = yield crypto_model_1.Crypto.findOne({ coin: payload }).sort({
         createdAt: -1,
     });
     if (!result) {
-        return { message: "No data found for the given coin" };
+        return { message: `No record found for the given coin: ${payload}` };
     }
     const response = {
         price: result.price,
@@ -27,11 +27,11 @@ const getStats = (payload) => __awaiter(void 0, void 0, void 0, function* () {
     return response;
 });
 const getDeviation = (payload) => __awaiter(void 0, void 0, void 0, function* () {
-    const result = yield crypto_model_1.Crypto.find({ coin: payload.coin })
+    const result = yield crypto_model_1.Crypto.find({ coin: payload })
         .sort({ createdAt: -1 })
         .limit(100);
     if (result.length === 0) {
-        throw new Error(`No records found for coin: ${payload.coin}`);
+        throw new Error(`No records found for the given coin: ${payload}`);
     }
     const prices = result.map((record) => record.price);
     const deviation = (0, cryptocurrency_utils_1.calculateDeviation)(prices);
