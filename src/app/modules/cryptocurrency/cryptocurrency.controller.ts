@@ -3,7 +3,8 @@ import { CryptocurrencyService } from "./cryptocurrency.service";
 
 const getStats = async (req: Request, res: Response) => {
   try {
-    const result = await CryptocurrencyService.getStats(req.body);
+    const { coin } = req.query;
+    const result = await CryptocurrencyService.getStats(coin as string);
     res.status(200).json({
       message: "Coin get successfully!",
       success: true,
@@ -19,7 +20,8 @@ const getStats = async (req: Request, res: Response) => {
 
 const getDeviation = async (req: Request, res: Response) => {
   try {
-    const result = await CryptocurrencyService.getDeviation(req.body);
+    const { coin } = req.query;
+    const result = await CryptocurrencyService.getDeviation(coin as string);
     res.status(200).json({
       message: "Deviation get successfully!",
       success: true,
