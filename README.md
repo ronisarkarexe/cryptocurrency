@@ -1,5 +1,29 @@
 ## Crypto Currency
 
+
+API-URL: https://cryptocurrency-eight-phi.vercel.app/api/v1/cryptocurrency/stats
+Method: POST
+```sh
+Query params
+{
+  "coin": "bitcoin"
+}
+```
+Response
+![starts](https://github.com/user-attachments/assets/efb365ee-9ae9-4959-b3fc-079f62ecf463)
+
+API-URL: https://cryptocurrency-eight-phi.vercel.app/api/v1/cryptocurrency/deviation
+Method: POST
+```sh 
+Query params
+{
+  "coin": "bitcoin"
+}
+```
+Response
+![deviation](https://github.com/user-attachments/assets/3015b919-1379-4e92-8859-0c296baabac9)
+
+
 ## Getting Started:-
 
 Instructions on setting up your project locally.
