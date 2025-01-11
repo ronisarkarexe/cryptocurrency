@@ -14,7 +14,7 @@ Response
 ![stats2](https://github.com/user-attachments/assets/38076198-a3db-45cf-8595-f11cd7e64d76)
 
 
-API-URL: https://cryptocurrency-eight-phi.vercel.app/api/v1/cryptocurrency/deviation?coin=bitcoin
+API-URL: https://cryptocurrency-pied.vercel.app/api/v1/cryptocurrency/deviation?coin=bitcoin
 
 Method: GET
 ```sh 
@@ -24,7 +24,7 @@ Query params
 }
 ```
 Response
-https://cryptocurrency-pied.vercel.app/api/v1/cryptocurrency/deviation?coin=bitcoin
+
 
 ## Getting Started:-
 
