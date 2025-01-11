@@ -1,8 +1,8 @@
 ## Crypto Currency
 
 
-API-URL: https://cryptocurrency-eight-phi.vercel.app/api/v1/cryptocurrency/stats
-Method: POST
+API-URL: https://cryptocurrency-eight-phi.vercel.app/api/v1/cryptocurrency/stats?coin=bitcoin
+Method: GET
 ```sh
 Query params
 {
@@ -12,8 +12,8 @@ Query params
 Response
 ![starts](https://github.com/user-attachments/assets/efb365ee-9ae9-4959-b3fc-079f62ecf463)
 
-API-URL: https://cryptocurrency-eight-phi.vercel.app/api/v1/cryptocurrency/deviation
-Method: POST
+API-URL: https://cryptocurrency-eight-phi.vercel.app/api/v1/cryptocurrency/deviation?coin=bitcoin
+Method: GET
 ```sh 
 Query params
 {
